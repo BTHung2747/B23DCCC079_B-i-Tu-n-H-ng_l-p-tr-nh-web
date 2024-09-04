@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="bailt.css" rel="stylesheet" type="text/css" />
+<style>
+        table, th, td {
+          border: 2px solid black;
+          border-collapse: collapse;
+        }
+</style>
+</head>
+<body onload="LLstoregate">
+    <script src="bailt.js"></script>
+    <div class="thongtinsv">
+        <h1>Thông tin sinh viên</h1><br>
+        <label for="name">Họ và tên</label>
+        <input type="text" id="name" name="name" value=""><br>
+        <label for="msv">Mã sinh viên</label>
+        <input type="text" id="msv" name="msv" value=""><br>
+        <label for="qq">Quê Quán</label>
+        <input type="text" id="qq" name="qq" value=""><br>
+        <label for="datemin">Ngày sinh</label>
+        <input type="date" id="datemin" name="datemin" min="2000-01-02" style="width: 200px;"><br>       
+        <label for="gioitinh">Giới tính</label>
+        <input type="radio" id="boy" name="name" value="Nam">Nam
+        <input type="radio" id="girl" name="name" value="Nữ">Nữ<br>
+        <button onclick="Submit()">Submit</button>
+       
+    </div><br>
+    <div class="danhsachsv" id="danhsachsv">
+        <table style="width: 100%;" id="list-sv">
+            
+        </table>
+    </div>
+    
+
+
+
+</body>
+</html>
+
