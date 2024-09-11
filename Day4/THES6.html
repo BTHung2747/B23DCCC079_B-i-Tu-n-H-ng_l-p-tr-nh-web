@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+</head>
+<body>
+    <script>
+/* varible  */
+var x = 10;
+function myFnc(){
+  var y = x + 5 
+  console.log(y); 
+}
+myFnc();
+var b=20
+if( b=== 10){
+    var b= 10;
+    console.log(b)
+;
+}
+console.log(b);
+/* deflauft */
+function kk(i,f=3){
+    return i*f ;
+
+}
+document.write(kk(5,6));
+/* spread */
+const oldArray = [1, 2, 3];
+const newArray = [oldArray, 4, 5];
+console.log(newArray); /* ouput: (3) [Array(3), 4, 5] */
+
+
+const oldlist = {
+    name : "nguễn văn a"
+
+};
+const newlisst={
+   ... oldlist,
+    age :19
+
+
+};
+console.log(newlisst)
+/* rest parameters */
+function dssv(name1,name2,...nameall){
+    console.log(name1);
+    console.log(name2);
+    console.log(nameall);
+};
+dssv("A","b","c","d")
+/* destruc */
+const myllacr = {
+ name: "Dương Minh Trí",
+ age:23 ,
+ luong:1222222,
+}
+const {name, age} = myllacr;
+console.log(name); 
+console.log(age); 
+console.log(myllacr); 
+/* class */
+
+</Script>
+
+
+</body>
+</html>
